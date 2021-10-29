@@ -12,4 +12,8 @@ import utilities.Driver;
     }
     @FindBy(id="twotabsearchbox")
     public WebElement searchBox;
+
+      @FindBy(xpath = "//div[@class='a-section a-spacing-small a-spacing-top-small']")
+      public WebElement sonucYazisiElementi;
+
 }

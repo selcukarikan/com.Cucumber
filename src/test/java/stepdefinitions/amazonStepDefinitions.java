@@ -20,17 +20,39 @@ public class amazonStepDefinitions {
     }
     @When("nutella icin arama yapar")
     public void nutella_icin_arama_yapar() {
-amazonPage.searchBox.sendKeys("nutella"+ Keys.ENTER);
+        amazonPage.searchBox.sendKeys("nutella"+ Keys.ENTER);
     }
     @Then("sonucun nutella icerdigini test eder")
     public void sonucun_nutella_icerdigini_test_eder() {
-        Assert.assertTrue(amazonPage.searchBox.getText().contains("nutella"));
+        Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains("nutella"));
 
     }
 
     @And("sayfayi kapatir")
     public void sayfayiKapatir() {
         Driver.closeDriver();
+
+    }
+
+    @When("java icin arama yapar")
+    public void java_icin_arama_yapar() {
+        amazonPage.searchBox.sendKeys("java"+ Keys.ENTER);
+
+    }
+    @Then("sonucun java icerdigini test eder")
+    public void sonucun_java_icerdigini_test_eder() {
+        Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains("java"));
+
+
+    }
+    @When("ipad icin arama yapar")
+    public void ipad_icin_arama_yapar() {
+        amazonPage.searchBox.sendKeys("ipad"+ Keys.ENTER);
+
+    }
+    @Then("sonucun ipad icerdigini test eder")
+    public void sonucun_ipad_icerdigini_test_eder() {
+        Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains("ipad"));
 
     }
 }

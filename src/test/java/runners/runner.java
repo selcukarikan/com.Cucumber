@@ -9,8 +9,8 @@ import org.junit.runner.RunWith;
     @CucumberOptions(
         features ="src/test/resources/features",
         glue="stepdefinitions",
-        tags="@amazon",
-        dryRun = true
+        tags="@java",
+        dryRun = false
             //dryRun=true dedigimiz de testi calistirmadan bize eksik adimi verir
             //dryRun=false yaparsak testi calistirir , eksik bir adimla karsilasirsa
             // test failed olur ve bize eksik adimi raporlar
