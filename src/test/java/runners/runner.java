@@ -4,11 +4,16 @@ import io.cucumber.junit.Cucumber;
 import io.cucumber.junit.CucumberOptions;
 import org.junit.runner.RunWith;
 
-public class runner {
 
     @RunWith(Cucumber.class)
-@CucumberOptions(
-
+    @CucumberOptions(
+        features ="src/test/resources/features",
+        glue="stepdefinitions",
+        tags="@amazon",
+        dryRun = true
+            //dryRun=true dedigimiz de testi calistirmadan bize eksik adimi verir
+            //dryRun=false yaparsak testi calistirir , eksik bir adimla karsilasirsa
+            // test failed olur ve bize eksik adimi raporlar
 
 
 
@@ -17,4 +22,3 @@ public class runner {
 
 
     }
-}
