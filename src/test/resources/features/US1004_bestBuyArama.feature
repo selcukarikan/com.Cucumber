@@ -1,7 +1,9 @@
 Feature: US1004 bestbuy sayfasinda kelime arama
   
   Scenario: TC08 kullanici ebay da istedigi kelimeyi aratip test eder
-    
+
+    #Bu test calismaz
+
     Given kullanici "eBayUrl" sayfasina gider
     Then "nutella" icin arama yapar
     And sonucun "nutella" icerdigini test eder
