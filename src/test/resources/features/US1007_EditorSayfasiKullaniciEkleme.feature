@@ -4,7 +4,7 @@ Feature: US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyiml
 
     Given kullanici "editorUrl" sayfasina gider
     Then new butonuna basar
-   And editor firstnaame kutusuna "<firstName>" bilgileri girer
+    And editor firstnaame kutusuna "<firstName>" bilgileri girer
     And editor lastnaame kutusuna "<lastName>" bilgileri girer
     And editor position kutusuna "<position>" bilgileri girer
     And editor office kutusuna "<office>" bilgileri girer

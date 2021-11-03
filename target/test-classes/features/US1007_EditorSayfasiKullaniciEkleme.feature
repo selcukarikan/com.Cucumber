@@ -1,10 +1,10 @@
-Feature: US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyim
-
+Feature: US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyiml
+@editor
   Scenario Outline: TC11 Editor sayfasina farkli kisiler ekleme
 
     Given kullanici "editorUrl" sayfasina gider
     Then new butonuna basar
-   And editor firstnaame kutusuna "<firstName>" bilgileri girer
+    And editor firstnaame kutusuna "<firstName>" bilgileri girer
     And editor lastnaame kutusuna "<lastName>" bilgileri girer
     And editor position kutusuna "<position>" bilgileri girer
     And editor office kutusuna "<office>" bilgileri girer
@@ -16,6 +16,6 @@ Feature: US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyim
 
     Examples:
       |firstName|lastName|position|office|extension|startDate|salary|
-      |selcuk |arikan   |QA Lead| Florsheim |124| 12.12.2021 |6000|
-      |Belma  |arikan   |Qa     |Russelsheim |123 |12.20.2012 |6000|
-      |Ali Osman  |arikan   |Qb    |Russelsheim |133 |03.20.2012 |18000|
+      |selcuk     |arikan    |QA Lead |Florsheim   |124 |12.12.2021  |6000|
+      |Belma      |arikan    |QA      |Russelsheim |123 |12.20.2012  |6000|
+      |Ali Osman  |arikan    |Owner   |Russelsheim |133 |03.20.2012  |18000|
