@@ -32,36 +32,43 @@ public class EditorStepDefinitions {
 
     @Then("editor lastnaame kutusuna {string} bilgileri girer")
     public void editor_lastnaame_kutusuna_bilgileri_girer(String lastName) {
+        editorPage.lastName.sendKeys(lastName);
 
     }
 
     @Then("editor position kutusuna {string} bilgileri girer")
     public void editor_position_kutusuna_bilgileri_girer(String position) {
+        editorPage.position.sendKeys(position);
 
     }
 
     @Then("editor office kutusuna {string} bilgileri girer")
     public void editor_office_kutusuna_bilgileri_girer(String office) {
+        editorPage.office.sendKeys(office);
 
     }
 
     @Then("editor extension kutusuna {string} bilgileri girer")
     public void editor_extension_kutusuna_bilgileri_girer(String extension) {
+        editorPage.extension.sendKeys(extension);
 
     }
 
     @Then("editor startDate kutusuna {string} bilgileri girer")
     public void editor_start_date_kutusuna_bilgileri_girer(String startDate) {
+        editorPage.startDate.sendKeys(startDate);
 
     }
 
     @Then("editor salary kutusuna {string} bilgileri girer")
     public void editor_salary_kutusuna_bilgileri_girer(String salary) {
+        editorPage.salary.sendKeys(salary);
 
     }
 
     @Then("Create tusuna basar")
     public void create_tusuna_basar() {
+        editorPage.createButonu.click();
 
     }
 

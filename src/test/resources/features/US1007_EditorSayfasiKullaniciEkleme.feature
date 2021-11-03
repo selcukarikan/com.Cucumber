@@ -17,5 +17,5 @@ Feature: US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyiml
     Examples:
       |firstName|lastName|position|office|extension|startDate|salary|
       |selcuk     |arikan    |QA Lead |Florsheim   |124 |12.12.2021  |6000|
-      |Belma      |arikan    |QA      |Russelsheim |123 |12.20.2012  |6000|
-      |Ali Osman  |arikan    |Owner   |Russelsheim |133 |03.20.2012  |18000|
+      |Belma      |arikan    |QA      |Russelsheim |123 |12.03.2012  |6000|
+      |Ali Osman  |arikan    |Owner   |Russelsheim |133 |03.04.2012  |18000|
