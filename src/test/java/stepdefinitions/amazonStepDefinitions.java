@@ -55,4 +55,13 @@ public class amazonStepDefinitions {
         Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains("ipad"));
 
     }
+
+    @Then("sonucun {string} icerdigini test eder")
+    public void sonucunIcerdiginiTestEder(String arg0) {
+        
+    }
+
+    @And("{string} icin arama yapar")
+    public void icinAramaYapar(String arg0) {
+    }
 }
