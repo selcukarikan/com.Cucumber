@@ -33,15 +33,15 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Cucumber Java.Scenario: TC11 Edito sayfasina farkli kisiler ekleme">
-    <configuration name="Feature: US1007_EditorSayfasiKullaniciEkleme" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.Runner">
+    <configuration name="Feature: US1009_editorCokluGirisTesti" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java" temporary="true" nameIsGenerated="true">
       <option name="CUCUMBER_CORE_VERSION" value="5" />
-      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1007_EditorSayfasiKullaniciEkleme.feature" />
+      <option name="FILE_PATH" value="$PROJECT_DIR$/src/test/resources/features/US1009_editorCokluGirisTesti.feature" />
       <option name="GLUE" value="stepdefinitions" />
       <option name="MAIN_CLASS_NAME" value="io.cucumber.core.cli.Main" />
       <module name="com.Cucumber" />
       <option name="PROGRAM_PARAMETERS" value=" --plugin org.jetbrains.plugins.cucumber.java.run.CucumberJvm5SMFormatter" />
-      <option name="SUGGESTED_NAME" value="Feature: US1007_EditorSayfasiKullaniciEkleme" />
+      <option name="SUGGESTED_NAME" value="Feature: US1009_editorCokluGirisTesti" />
       <option name="WORKING_DIRECTORY" value="$MODULE_WORKING_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -129,11 +129,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.Runner" />
+        <item itemvalue="Cucumber Java.Feature: US1009_editorCokluGirisTesti" />
         <item itemvalue="Cucumber Java.Scenario: TC11 Edito sayfasina farkli kisiler ekleme" />
         <item itemvalue="Cucumber Java.Scenario: TC11 Editor sayfasina farkli kisiler ekleme (1)" />
-        <item itemvalue="JUnit.Runner" />
         <item itemvalue="Cucumber Java.Scenario: TC11 Editor sayfasina farkli kisiler ekleme" />
-        <item itemvalue="Cucumber Java.Feature: US1007_EditorSayfasiKullaniciEkleme" />
       </list>
     </recent_temporary>
   </component>

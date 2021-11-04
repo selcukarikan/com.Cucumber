@@ -16,6 +16,7 @@ Feature: US1009 editor sayfasinda giris yapilabildigini test et
     And editor salary kutusuna "<salary>" bilgileri girer
     And Create tusuna basar
     Then "<firstName>" ve "<lastName>" girerek kaydin tamamlandigini test eder
+    And sayfayi kapatir
 
     Examples:
       |firstName|lastName|position|office|extension|startDate|salary|

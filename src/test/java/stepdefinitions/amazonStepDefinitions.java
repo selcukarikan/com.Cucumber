@@ -72,4 +72,10 @@ public class amazonStepDefinitions {
     }
 
 
+    @Then("basligin {string} icerdigini test eder")
+    public void basliginIcerdiginiTestEder(String arananKelime) {
+
+        Assert.assertTrue(Driver.getDriver().getTitle().contains(arananKelime));
+
+    }
 }

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="12.894">
+<testcase classname="US1009 editor sayfasinda giris yapilabildigini test et" name="TC11 Editor sayfasina farkli kisiler ekleme" time="4.94">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given kullanici "editorUrl" sayfasina gider.................................passed
+Then new butonuna basar.....................................................passed
+And editor firstnaame kutusuna "selcuk" bilgileri girer.....................undefined
+And editor lastnaame kutusuna "arikan" bilgileri girer......................skipped
+And editor position kutusuna "QA Lead" bilgileri girer......................skipped
+And editor office kutusuna "Florsheim" bilgileri girer......................skipped
+And editor extension kutusuna "124" bilgileri girer.........................skipped
+And editor startDate kutusuna "12.12.2021" bilgileri girer..................skipped
+And editor salary kutusuna "6000" bilgileri girer...........................skipped
+And Create tusuna basar.....................................................skipped
+Then "selcuk" ve "arikan" girerek kaydin tamamlandigini test eder...........skipped
+And sayfayi kapatir.........................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="US1009 editor sayfasinda giris yapilabildigini test et" name="TC11 Editor sayfasina farkli kisiler ekleme 2" time="3.768">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given kullanici "editorUrl" sayfasina gider.................................passed
+Then new butonuna basar.....................................................passed
+And editor firstnaame kutusuna "Belma" bilgileri girer......................undefined
+And editor lastnaame kutusuna "arikan" bilgileri girer......................skipped
+And editor position kutusuna "QA" bilgileri girer...........................skipped
+And editor office kutusuna "Russelsheim" bilgileri girer....................skipped
+And editor extension kutusuna "123" bilgileri girer.........................skipped
+And editor startDate kutusuna "12.03.2012" bilgileri girer..................skipped
+And editor salary kutusuna "6000" bilgileri girer...........................skipped
+And Create tusuna basar.....................................................skipped
+Then "Belma" ve "arikan" girerek kaydin tamamlandigini test eder............skipped
+And sayfayi kapatir.........................................................skipped
+]]></failure>
+</testcase>
+<testcase classname="US1009 editor sayfasinda giris yapilabildigini test et" name="TC11 Editor sayfasina farkli kisiler ekleme 3" time="3.642">
+<failure message="The scenario has pending or undefined step(s)" type="java.lang.Exception"><![CDATA[Given kullanici "editorUrl" sayfasina gider.................................passed
+Then new butonuna basar.....................................................passed
+And editor firstnaame kutusuna "Ali Osman" bilgileri girer..................undefined
+And editor lastnaame kutusuna "arikan" bilgileri girer......................skipped
+And editor position kutusuna "Owner" bilgileri girer........................skipped
+And editor office kutusuna "Russelsheim" bilgileri girer....................skipped
+And editor extension kutusuna "133" bilgileri girer.........................skipped
+And editor startDate kutusuna "03.04.2012" bilgileri girer..................skipped
+And editor salary kutusuna "18000" bilgileri girer..........................skipped
+And Create tusuna basar.....................................................skipped
+Then "Ali Osman" ve "arikan" girerek kaydin tamamlandigini test eder........skipped
+And sayfayi kapatir.........................................................skipped
+]]></failure>
+</testcase>
+</testsuite>
