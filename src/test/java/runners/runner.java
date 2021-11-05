@@ -11,7 +11,7 @@ import org.junit.runner.RunWith;
             "junit:target/xml-report/cucumber.xml"},
     features="src/test/resources/features",
     glue="stepdefinitions",
-    tags="@rapor2"  ,
+    tags="@screenShot"  ,
 
     dryRun= false        // dryRun=true dedigimizde testi calistirmadan bize eksik adimi verir
         // dryRun=false yaparsak testi calistirir, eksik bir adimla karsilasirsa

@@ -1,18 +1,138 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="7.789">
-<testcase classname="US1003 kullanici istedigi kelime icin arama yapip, sonucu test eder" name="TC07 istenen kelimenin oldugunu test etme" time="7.35">
-<failure message="" type="java.lang.AssertionError"><![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
-And "armut" icin arama yapar................................................passed
-Then sonucun "elma" icerdigini test eder....................................failed
+<testsuite errors="0" failures="3" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="3" time="66.728">
+<testcase classname="US1009 editor sayfasinda giris yapilabildigini test et" name="TC13 Edito sayfasina farkli kisiler ekleme" time="23.002">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[@class='sorting_1']&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Air-von-selcuk', ip: '2a02:908:1b2:d580:0:0:0:dd05%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/1s/07t30pbn1_b...}, goog:chromeOptions: {debuggerAddress: localhost:61886}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 3478d8576bf121ac5b7f3bbe80f1bc1a&#10;*** Element info: {Using=xpath, value=//td[@class='sorting_1']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given kullanici "editorUrl" sayfasina gider.................................passed
+Then new butonuna basar.....................................................passed
+And editor firstname kutusuna "Hakan" bilgileri girer.......................passed
+And editor lastname kutusuna "Tetik" bilgileri girer........................passed
+And editor position kutusuna "TestLead" bilgileri girer.....................passed
+And editor office kutusuna "Paris" bilgileri girer..........................passed
+And editor extension kutusuna "ali" bilgileri girer.........................passed
+And editor startdate kutusuna "2021-01-21" bilgileri girer..................passed
+And editor salary kutusuna "60000" bilgileri girer..........................passed
+And Create tusuna basar.....................................................passed
+Then "Hakan" ve "Tetik" girerek kaydin tamamlandigini test eder.............failed
 And sayfayi kapatir.........................................................skipped
 
 StackTrace:
-java.lang.AssertionError
-	at org.junit.Assert.fail(Assert.java:87)
-	at org.junit.Assert.assertTrue(Assert.java:42)
-	at org.junit.Assert.assertTrue(Assert.java:53)
-	at stepdefinitions.amazonStepDefinitions.sonucunIcerdiginiTestEder(amazonStepDefinitions.java:66)
-	at ✽.sonucun "elma" icerdigini test eder(file:///Users/selcuk/javacrashkurs/com.Cucumber/src/test/resources/features/US1003_amazonParametreliArama.feature:7)
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@class='sorting_1']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Air-von-selcuk', ip: '2a02:908:1b2:d580:0:0:0:dd05%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/1s/07t30pbn1_b...}, goog:chromeOptions: {debuggerAddress: localhost:61886}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 3478d8576bf121ac5b7f3bbe80f1bc1a
+*** Element info: {Using=xpath, value=//td[@class='sorting_1']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at stepdefinitions.EditorStepDefinitions.veGirerekKaydinTamamlandiginiTestEder(EditorStepDefinitions.java:82)
+	at ✽."Hakan" ve "Tetik" girerek kaydin tamamlandigini test eder(file:///Users/selcuk/javacrashkurs/com.Cucumber/src/test/resources/features/US1009_EditorCokluGirisTesti.feature:17)
+]]></failure>
+</testcase>
+<testcase classname="US1009 editor sayfasinda giris yapilabildigini test et" name="TC13 Edito sayfasina farkli kisiler ekleme 2" time="22.092">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[@class='sorting_1']&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Air-von-selcuk', ip: '2a02:908:1b2:d580:0:0:0:dd05%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/1s/07t30pbn1_b...}, goog:chromeOptions: {debuggerAddress: localhost:61901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: 31f5d9e150167e509cfcf374788c83b3&#10;*** Element info: {Using=xpath, value=//td[@class='sorting_1']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given kullanici "editorUrl" sayfasina gider.................................passed
+Then new butonuna basar.....................................................passed
+And editor firstname kutusuna "Murat" bilgileri girer.......................passed
+And editor lastname kutusuna "Ercoban" bilgileri girer......................passed
+And editor position kutusuna "QA" bilgileri girer...........................passed
+And editor office kutusuna "Kenya" bilgileri girer..........................passed
+And editor extension kutusuna "126" bilgileri girer.........................passed
+And editor startdate kutusuna "2021-01-20" bilgileri girer..................passed
+And editor salary kutusuna "40000" bilgileri girer..........................passed
+And Create tusuna basar.....................................................passed
+Then "Murat" ve "Ercoban" girerek kaydin tamamlandigini test eder...........failed
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@class='sorting_1']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Air-von-selcuk', ip: '2a02:908:1b2:d580:0:0:0:dd05%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/1s/07t30pbn1_b...}, goog:chromeOptions: {debuggerAddress: localhost:61901}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 31f5d9e150167e509cfcf374788c83b3
+*** Element info: {Using=xpath, value=//td[@class='sorting_1']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at stepdefinitions.EditorStepDefinitions.veGirerekKaydinTamamlandiginiTestEder(EditorStepDefinitions.java:82)
+	at ✽."Murat" ve "Ercoban" girerek kaydin tamamlandigini test eder(file:///Users/selcuk/javacrashkurs/com.Cucumber/src/test/resources/features/US1009_EditorCokluGirisTesti.feature:17)
+]]></failure>
+</testcase>
+<testcase classname="US1009 editor sayfasinda giris yapilabildigini test et" name="TC13 Edito sayfasina farkli kisiler ekleme 3" time="21.167">
+<failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//td[@class='sorting_1']&quot;}&#10;  (Session info: chrome=95.0.4638.69)&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Air-von-selcuk', ip: '2a02:908:1b2:d580:0:0:0:dd05%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/1s/07t30pbn1_b...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}&#10;Session ID: c9d136b484b999dda24545f9e7548ef1&#10;*** Element info: {Using=xpath, value=//td[@class='sorting_1']}" type="org.openqa.selenium.NoSuchElementException"><![CDATA[Given kullanici "editorUrl" sayfasina gider.................................passed
+Then new butonuna basar.....................................................passed
+And editor firstname kutusuna "Furkan" bilgileri girer......................passed
+And editor lastname kutusuna "Yilmaz" bilgileri girer.......................passed
+And editor position kutusuna "QA" bilgileri girer...........................passed
+And editor office kutusuna "Adana" bilgileri girer..........................passed
+And editor extension kutusuna "130" bilgileri girer.........................passed
+And editor startdate kutusuna "2021-03-21" bilgileri girer..................passed
+And editor salary kutusuna "80000" bilgileri girer..........................passed
+And Create tusuna basar.....................................................passed
+Then "Furkan" ve "Yilmaz" girerek kaydin tamamlandigini test eder...........failed
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//td[@class='sorting_1']"}
+  (Session info: chrome=95.0.4638.69)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Air-von-selcuk', ip: '2a02:908:1b2:d580:0:0:0:dd05%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.16', java.version: '1.8.0_291'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 95.0.4638.69, chrome: {chromedriverVersion: 95.0.4638.54 (d31a821ec901f..., userDataDir: /var/folders/1s/07t30pbn1_b...}, goog:chromeOptions: {debuggerAddress: localhost:61916}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: c9d136b484b999dda24545f9e7548ef1
+*** Element info: {Using=xpath, value=//td[@class='sorting_1']}
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy18.isDisplayed(Unknown Source)
+	at stepdefinitions.EditorStepDefinitions.veGirerekKaydinTamamlandiginiTestEder(EditorStepDefinitions.java:82)
+	at ✽."Furkan" ve "Yilmaz" girerek kaydin tamamlandigini test eder(file:///Users/selcuk/javacrashkurs/com.Cucumber/src/test/resources/features/US1009_EditorCokluGirisTesti.feature:17)
 ]]></failure>
 </testcase>
 </testsuite>
