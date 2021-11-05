@@ -1,4 +1,4 @@
-Feature: US10011 kullanici dogru bilgilerle sayfaya girebilmeli
+Feature:US1011 kullanici dogru bilgilerle sayfaya girebilmeli
 
   @CH1
   Scenario: TC17 positive login testi

@@ -11,10 +11,12 @@ Feature: US1006 concort hotels sayfasinda farkli kullanici adlari ile negative t
     Then giris yapilamadigini test eder
     And sayfayi kapatir
 
+
+
     Examples:
-      |wrongUserName|wrongPassword|
-      |Manager5     |	Manager5!   |
-      |Manager6     |	Manager6!   |
-      |Manager7     |	Manager7!   |
-      |Manager8     |	Manager8!   |
-      |Manager9     |	Manager9!   |
+    |wrongUserName|wrongPassword|
+    |Manager5     |	Manager5!   |
+    |Manager6     |	Manager6!   |
+    |Manager7     |	Manager7!   |
+    |Manager8     |	Manager8!   |
+    |Manager9     |	Manager9!   |

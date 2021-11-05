@@ -3,11 +3,11 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-11-04T20:28:10.601Z",
+        "start_timestamp": "2021-11-04T20:24:52.690Z",
         "before": [
           {
             "result": {
-              "duration": 3000000,
+              "duration": 3001700,
               "status": "passed"
             },
             "match": {
@@ -18,11 +18,11 @@
         "line": 4,
         "name": "TC17 positive login testi",
         "description": "",
-        "id": "us10011-kullanici-dogru-bilgilerle-sayfaya-girebilmeli;tc17-positive-login-testi",
+        "id": "us1011-kullanici-dogru-bilgilerle-sayfaya-girebilmeli;tc17-positive-login-testi",
         "after": [
           {
             "result": {
-              "duration": 465000000,
+              "duration": 1027890600,
               "status": "passed"
             },
             "match": {
@@ -35,7 +35,7 @@
         "steps": [
           {
             "result": {
-              "duration": 6948000000,
+              "duration": 5539712500,
               "status": "passed"
             },
             "line": 5,
@@ -53,7 +53,7 @@
           },
           {
             "result": {
-              "duration": 736000000,
+              "duration": 806253000,
               "status": "passed"
             },
             "line": 6,
@@ -65,7 +65,7 @@
           },
           {
             "result": {
-              "duration": 144000000,
+              "duration": 140828900,
               "status": "passed"
             },
             "line": 7,
@@ -83,7 +83,7 @@
           },
           {
             "result": {
-              "duration": 91000000,
+              "duration": 130179900,
               "status": "passed"
             },
             "line": 8,
@@ -101,7 +101,7 @@
           },
           {
             "result": {
-              "duration": 4394000000,
+              "duration": 5035422200,
               "status": "passed"
             },
             "line": 9,
@@ -113,11 +113,14 @@
           },
           {
             "result": {
-              "status": "undefined"
+              "duration": 134924600,
+              "status": "passed"
             },
             "line": 10,
             "name": "CH basarili giris yapildigini test eder",
-            "match": {},
+            "match": {
+              "location": "stepdefinitions.CHQAStepDefinitions.chBasariliGirisYapildiginiTestEder()"
+            },
             "keyword": "Then "
           }
         ],
@@ -128,11 +131,11 @@
         ]
       }
     ],
-    "name": "US10011 kullanici dogru bilgilerle sayfaya girebilmeli",
+    "name": "US1011 kullanici dogru bilgilerle sayfaya girebilmeli",
     "description": "",
-    "id": "us10011-kullanici-dogru-bilgilerle-sayfaya-girebilmeli",
+    "id": "us1011-kullanici-dogru-bilgilerle-sayfaya-girebilmeli",
     "keyword": "Feature",
-    "uri": "file:src/test/resources/features/US10011_ConcortHotelPositivLoginTest.feature",
+    "uri": "file:src/test/resources/features/US1011_CHPositiveLogintestti.feature",
     "tags": []
   }
 ]

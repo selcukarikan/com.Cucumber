@@ -1,4 +1,5 @@
 package stepdefinitions;
+
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
@@ -12,6 +13,7 @@ public class Hooks {
     public void setUp(){
 
     }
+
     @After
     public void tearDown(Scenario scenario){
         final byte[] screenshot=((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
@@ -20,4 +22,5 @@ public class Hooks {
         }
         Driver.closeDriver();
     }
+
 }

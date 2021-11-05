@@ -15,11 +15,14 @@ public class amazonStepDefinitions {
 
     @When("kullanici amazon sayfasina gider")
     public void kullanici_amazon_sayfasina_gider() {
+
         Driver.getDriver().get(ConfigReader.getProperty("amazonUrl"));
     }
+
+
     @When("nutella icin arama yapar")
     public void nutella_icin_arama_yapar() {
-        amazonPage.aramaKutusu.sendKeys("Nutella"+ Keys.ENTER);
+       amazonPage.aramaKutusu.sendKeys("Nutella"+ Keys.ENTER);
 
     }
     @Then("sonucun nutella icerdigini test eder")
@@ -43,6 +46,7 @@ public class amazonStepDefinitions {
     }
     @When("ipad icin arama yapar")
     public void ipad_icin_arama_yapar() {
+
         amazonPage.aramaKutusu.sendKeys("ipad"+ Keys.ENTER);
     }
     @Then("sonucun ipad icerdigini test eder")
@@ -52,30 +56,30 @@ public class amazonStepDefinitions {
 
     @And("{string} icin arama yapar")
     public void icinAramaYapar(String arananKelime) {
-        amazonPage.aramaKutusu.sendKeys(arananKelime+ Keys.ENTER);
+
+            amazonPage.aramaKutusu.sendKeys(arananKelime+ Keys.ENTER);
     }
 
     @Then("sonucun {string} icerdigini test eder")
     public void sonucunIcerdiginiTestEder(String arananKelime) {
+
         Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains(arananKelime));
-
     }
 
+    @Given("kullanici {string} sayfasina gider")
+    public void kullaniciSayfasinaGider(String istenenUrl) {
 
-
-        @Given("kullanici {string} sayfasina gider")
-        public void kullaniciSayfasinaGider(String istenenUrl) {
-
-            Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
-
-
+        Driver.getDriver().get(ConfigReader.getProperty(istenenUrl));
     }
 
+    @And("sonuc sayisini yazdirir")
+    public void sonucSayisiniYazdirir() {
+        System.out.println(amazonPage.sonucYazisiElementi.getText());
+    }
 
     @Then("basligin {string} icerdigini test eder")
     public void basliginIcerdiginiTestEder(String arananKelime) {
 
         Assert.assertTrue(Driver.getDriver().getTitle().contains(arananKelime));
-
     }
 }

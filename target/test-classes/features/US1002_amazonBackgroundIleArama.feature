@@ -1,24 +1,21 @@
-Feature: US1001 amazon arama
+@rapor1
+Feature: US1002 amazon background ile arama
 
-  @amazon @nutella
-  Scenario: TC01 amazon nutella arama
-
+  Background: amazon sayfasina gitme
     When kullanici amazon sayfasina gider
+
+  Scenario: TC04 amazon nutella arama
     And nutella icin arama yapar
     Then sonucun nutella icerdigini test eder
     And sayfayi kapatir
 
-  @amazon @java
-  Scenario: TC02 amazon java arama
-    When kullanici amazon sayfasina gider
+    @wip
+  Scenario: TC05 amazon java arama
     And java icin arama yapar
     Then sonucun java icerdigini test eder
     And sayfayi kapatir
 
-
-  @amazon @ipad
-  Scenario: TC03 amazon ipad arama
-    When kullanici amazon sayfasina gider
+  Scenario: TC06 amazon ipad arama
     And ipad icin arama yapar
     Then sonucun ipad icerdigini test eder
     And sayfayi kapatir
