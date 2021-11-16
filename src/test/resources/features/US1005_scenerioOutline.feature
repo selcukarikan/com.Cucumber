@@ -10,7 +10,7 @@ Feature: US1005 amazonda liste ile arama
     Then sayfayi kapatir
 
 
-
+//Scenario outline ile examples beraber kullanilmali. Tek basina bir anlami yok
 
     Examples:
     |arananUrun|
