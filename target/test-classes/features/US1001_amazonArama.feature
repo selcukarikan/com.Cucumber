@@ -8,6 +8,7 @@ Feature: US1001 amazon arama
     And nutella icin arama yapar
     Then sonucun nutella icerdigini test eder
     And sayfayi kapatir
+    And eine moglichkeit
 
   @amazon @java
   Scenario: TC02 amazon java arama

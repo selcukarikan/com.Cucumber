@@ -84,4 +84,9 @@ public class amazonStepDefinitions {
 
         Assert.assertTrue(Driver.getDriver().getTitle().contains(arananKelime));
     }
+
+    @And("eine moglichkeit")
+    public void eineMoglichkeit() {
+        Driver.getDriver().get("https://www.ebay.com");
+    }
 }
