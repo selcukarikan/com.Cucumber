@@ -9,7 +9,7 @@ public class AmazonPage {
 
     public AmazonPage(){
         PageFactory.initElements(Driver.getDriver(),this);
-    }
+    } //conctruction olusturma
 
     @FindBy(id="twotabsearchtextbox")
     public WebElement aramaKutusu;
