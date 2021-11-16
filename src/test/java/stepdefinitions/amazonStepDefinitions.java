@@ -13,6 +13,8 @@ import utilities.Driver;
 public class amazonStepDefinitions {
     AmazonPage amazonPage=new AmazonPage();
 
+    //amazonStepDefinitons
+
     @When("kullanici amazon sayfasina gider")
     public void kullanici_amazon_sayfasina_gider() {
 
