@@ -7,6 +7,7 @@ import pages.CHQAPage;
 public class CHQAStepDefinitions {
 
     CHQAPage chqaPage=new CHQAPage();
+    // once parametresiz bir obje olusturmaliyiz
 
     @Then("CH login linkine tiklar")
     public void ch_login_linkine_tiklar() {

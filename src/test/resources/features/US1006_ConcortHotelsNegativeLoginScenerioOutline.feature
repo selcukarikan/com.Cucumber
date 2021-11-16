@@ -7,6 +7,7 @@ Feature: US1006 concort hotels sayfasinda farkli kullanici adlari ile negative t
     Given kullanici "CHQAUrl" sayfasina gider
     Then CH login linkine tiklar
     And CH username kutusuna "<wrongUserName>" yazar
+    #liste kullandigimiz icin buyuk kucuk isareti arasina yazilmali
     And CH password kutusuna "<wrongPassword>" yazar
     And CH login butonuna basar
     Then giris yapilamadigini test eder
