@@ -60,7 +60,7 @@ public class Driver {
             driver.quit();
         }
         // burada yeniden null degeri atamamizin sebebi. bir sonraki getDriver method'u cagirisimizda
-        // yeni deger atayabilmek istememizdir.
+        // yeni deger atayabilmek istememizdirgit
         driver=null;
     }
 }
