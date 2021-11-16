@@ -21,7 +21,6 @@
             <version>3.141.59</version>
         </dependency>
 
-        //faker methodu
 
         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
@@ -90,7 +89,6 @@
 
         </plugins>
     </build>
-
 
 
 </project>
