@@ -20,6 +20,9 @@
             <artifactId>selenium-java</artifactId>
             <version>3.141.59</version>
         </dependency>
+
+        //faker methodu
+
         <!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
         <dependency>
             <groupId>com.github.javafaker</groupId>
