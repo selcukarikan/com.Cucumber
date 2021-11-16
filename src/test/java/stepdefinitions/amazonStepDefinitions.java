@@ -89,4 +89,16 @@ public class amazonStepDefinitions {
     public void eineMoglichkeit() {
         Driver.getDriver().get("https://www.ebay.com");
     }
+        @When("iphone11 icin arama yapar")
+        public void iphone11_icin_arama_yapar() {
+            amazonPage.aramaKutusu.sendKeys("iphone11"+ Keys.ENTER);
+
+        }
+        @Then("sonucun iphone icerdigini test eder")
+        public void sonucun_iphone_icerdigini_test_eder() {
+            Assert.assertTrue(amazonPage.sonucYazisiElementi.getText().contains("iphone11"));
+
+
+
+        }
 }

@@ -1,4 +1,5 @@
 @Paralel1
+
 Feature: US1001 amazon arama
 
   @amazon @nutella
@@ -24,3 +25,11 @@ Feature: US1001 amazon arama
     And ipad icin arama yapar
     Then sonucun ipad icerdigini test eder
     And sayfayi kapatir
+
+
+    @amazon @iphone11
+    Scenario: TC03 amazon iphone11 arama
+      When kullanici amazon sayfasina gider
+      And iphone11 icin arama yapar
+      Then sonucun iphone icerdigini test eder
+      And sayfayi kapatir
