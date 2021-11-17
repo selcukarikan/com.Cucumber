@@ -13,7 +13,7 @@ import org.junit.runner.RunWith;
         glue="dbStepDefinitions",
         tags="@db"  ,
 
-        dryRun= false
+        dryRun= true
 //test
 )
 
