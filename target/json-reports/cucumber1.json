@@ -3,7 +3,7 @@
     "line": 1,
     "elements": [
       {
-        "start_timestamp": "2021-11-17T20:27:09.082Z",
+        "start_timestamp": "2021-11-17T21:22:33.027Z",
         "line": 4,
         "name": "TC18 Concort Hotel Database Read Test",
         "description": "",
@@ -13,7 +13,7 @@
         "steps": [
           {
             "result": {
-              "duration": 2127058700,
+              "duration": 6655787200,
               "status": "passed"
             },
             "line": 6,
@@ -25,7 +25,7 @@
           },
           {
             "result": {
-              "duration": 296853800,
+              "duration": 390597100,
               "status": "passed"
             },
             "line": 8,
@@ -47,8 +47,8 @@
           },
           {
             "result": {
-              "error_message": "com.microsoft.sqlserver.jdbc.SQLServerException: The result set has no current row.\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:234)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerResultSet.verifyResultSetHasCurrentRow(SQLServerResultSet.java:539)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerResultSet.getterGetColumn(SQLServerResultSet.java:2022)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerResultSet.getObject(SQLServerResultSet.java:2359)\r\n\tat com.microsoft.sqlserver.jdbc.SQLServerResultSet.getObject(SQLServerResultSet.java:2460)\r\n\tat dbStepDefinitions.DbStepDefinition.kullanici_sutunundaki_verileri_okur_ve_istedigi_islemleri_yapar(DbStepDefinition.java:36)\r\n\tat ✽.kullanici \"Price\" sutunundaki verileri okur ve istedigi islemleri yapar(file:///C:/Users/Lenovo/IdeaProjects/com.Cucumber/src/test/resources/features/US1012_DbRead.feature:10)\r\n",
-              "status": "failed"
+              "duration": 1062428400,
+              "status": "passed"
             },
             "line": 10,
             "name": "kullanici \"Price\" sutunundaki verileri okur ve istedigi islemleri yapar",

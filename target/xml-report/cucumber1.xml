@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="3.66">
-    <testcase classname="US 1012 Kullanici Concort Hotel database'ine test eder" name="TC18 Concort Hotel Database Read Test" time="2.769">
-        <failure message="The result set has no current row." type="com.microsoft.sqlserver.jdbc.SQLServerException">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="8.968">
+    <testcase classname="US 1012 Kullanici Concort Hotel database'ine test eder" name="TC18 Concort Hotel Database Read Test" time="8.28">
+        <system-out>
             <![CDATA[Given kullanici CHQA database'ine baglanir..................................passed
 And kullanici "tHOTELROOM" tablosundaki "Price" verilerini alir.............passed
-And kullanici "Price" sutunundaki verileri okur ve istedigi islemleri yapar.failed
-
-StackTrace:
-com.microsoft.sqlserver.jdbc.SQLServerException: The result set has no current row.
-	at com.microsoft.sqlserver.jdbc.SQLServerException.makeFromDriverError(SQLServerException.java:234)
-	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.verifyResultSetHasCurrentRow(SQLServerResultSet.java:539)
-	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getterGetColumn(SQLServerResultSet.java:2022)
-	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getObject(SQLServerResultSet.java:2359)
-	at com.microsoft.sqlserver.jdbc.SQLServerResultSet.getObject(SQLServerResultSet.java:2460)
-	at dbStepDefinitions.DbStepDefinition.kullanici_sutunundaki_verileri_okur_ve_istedigi_islemleri_yapar(DbStepDefinition.java:36)
-	at ✽.kullanici "Price" sutunundaki verileri okur ve istedigi islemleri yapar(file:///C:/Users/Lenovo/IdeaProjects/com.Cucumber/src/test/resources/features/US1012_DbRead.feature:10)
+And kullanici "Price" sutunundaki verileri okur ve istedigi islemleri yapar.passed
 ]]>
-        </failure>
+        </system-out>
     </testcase>
 </testsuite>

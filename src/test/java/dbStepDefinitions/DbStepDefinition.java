@@ -1,7 +1,11 @@
 package dbStepDefinitions;
 import io.cucumber.java.en.Given;
+import org.apache.commons.io.output.BrokenWriter;
+import org.junit.Assert;
 
 import java.sql.* ;
+import java.util.ArrayList;
+import java.util.List;
 
 public class DbStepDefinition {
 
@@ -34,7 +38,61 @@ public class DbStepDefinition {
     public void kullanici_sutunundaki_verileri_okur_ve_istedigi_islemleri_yapar(String field) throws SQLException {
 
         //resultset wie Iterator funktioniert
+
+        resultSet.first();
         System.out.println(resultSet.getObject(field).toString());
 
+        //resultSet
+        System.out.println(resultSet.next()); //true
+        System.out.println(resultSet.getObject(field).toString()); //4000.0000
+
+        // son objeye gider ve sonra resultSet.next() calistirirsak
+        //bir sonraki eleman olmayacagi icin bize false doner
+        resultSet.last();
+        System.out.println(resultSet.next()); // false
+
+        //tum listeyi yazdirmak icin while loop ile beraber resultSet.next() kullanabiliriz
+        //cunku resultSet.next() bir sonraki obje var oldugu muddetce bize  true dondurecek
+        // ve while loop calismaya devam edecek
+        //son obje ulastigimizda resultSet.next() false donecek ve while loop bitecek
+        //ancak biz 40. satirda son objeye gittigimiz icin
+        //while loopu calistirirsak hicbirsey yazdirmaz
+        //while loop calistirmadan once ilk kayda yada ilk objeye gitmemiz gerekir
+      //         resultSet.first(); // birinci objeye gittim
+        //      while (resultSet.next()) { // usteki satur birinci objeye goturdu
+            // ama resultSet.next() sonraki objeye gecirdi
+            //dolayisiyla liste 2. fiyattan basladi
+           //        System.out.println(resultSet.getObject(field).toString());
+
+/*
+        resultSet.absolute(0);
+        while (resultSet.next()) {
+            System.out.println(resultSet.getObject(field).toString());
+
+        }
+*/
+        //varsa ilk 100 fiyati double olarak bir liste olarak kaydedelim
+
+        int sayac=1;
+        resultSet.absolute(0);
+        List<Double> ilkYuzSayi=new ArrayList<>();
+
+
+        while (sayac<101 && resultSet.next()){
+
+
+            ilkYuzSayi.add(resultSet.getDouble(field));
+            sayac++;
+
+        }
+        System.out.println(ilkYuzSayi);
+        System.out.println(ilkYuzSayi.size());
+
+        //7. fiyatin double olarak 620.0 oldugunu test ediniz
+
+        resultSet.absolute(7);
+        double yedinciSayi=resultSet.getDouble(field);
+
+        Assert.assertTrue(yedinciSayi==620);
     }}
 
