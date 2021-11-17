@@ -13,8 +13,9 @@ import org.junit.runner.RunWith;
         glue="dbStepDefinitions",
         tags="@db"  ,
 
-        dryRun= true
-//test
+        dryRun= false
+
+
 )
 
 public class DbRunner {
