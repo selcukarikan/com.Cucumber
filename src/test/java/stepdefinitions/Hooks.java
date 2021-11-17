@@ -21,6 +21,8 @@ public class Hooks {
             scenario.attach(screenshot, "image/png","screenshots");
         }
         Driver.closeDriver();
+
+        //cucumber den import ettik
     }
 
 }

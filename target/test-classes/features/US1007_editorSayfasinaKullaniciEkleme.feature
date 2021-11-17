@@ -1,5 +1,6 @@
 Feature: US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyim
-  @editor
+ @editor
+@rapor
   Scenario Outline: TC11 Edito sayfasina farkli kisiler ekleme
 
     Given kullanici "editorUrl" sayfasina gider
@@ -17,6 +18,6 @@ Feature: US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyim
 
     Examples:
     |firstName| lastName|position|office|extension|startDate|salary|
-    |Hakan    |Tetik    |TestLead|Paris |ali      |2021-01-21|60000|
-    |Murat    |Ercoban  |QA      |Kenya |126      |2021/01/20|40000|
-    |Furkan   |Yilmaz   |QA      |Adana |130      |2021.03.21|80.000|
+    |Selcuk    |Arikan    |TestLead|Frankfurt   |280      |2021-01-21|60000 |
+    |Ali       |Osman     |QA      |Rüsselsheim |40       |2021/01/20|40000 |
+    |Ahmet     |Sait      |QA      |Flörsheim   |20       |2021.03.21|80000 |

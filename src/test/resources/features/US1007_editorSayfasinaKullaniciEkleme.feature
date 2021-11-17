@@ -1,5 +1,6 @@
 Feature: US1007 editor sayfasina farkli kullanicilar ekleyebilmeliyim
-  @editor
+ @editor
+
   Scenario Outline: TC11 Edito sayfasina farkli kisiler ekleme
 
     Given kullanici "editorUrl" sayfasina gider
