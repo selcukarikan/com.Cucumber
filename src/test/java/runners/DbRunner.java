@@ -14,9 +14,6 @@ import org.junit.runner.RunWith;
         tags="@db"  ,
 
         dryRun= false
-
-
 )
-
 public class DbRunner {
 }
