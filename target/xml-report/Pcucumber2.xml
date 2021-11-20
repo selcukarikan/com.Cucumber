@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="116.559">
-    <testcase classname="US1003 kullanici istedigi kelime icin arama yapip, sonucu test eder" name="TC07 istenen kelimenin oldugunu test etme" time="13.483">
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="11" time="207.553">
+    <testcase classname="US1003 kullanici istedigi kelime icin arama yapip, sonucu test eder" name="TC07 istenen kelimenin oldugunu test etme" time="27.697">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
 And "armut" icin arama yapar................................................passed
@@ -9,7 +9,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz" time="11.681">
+    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz" time="23.166">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
 Then "nutella" icin arama yapar.............................................passed
@@ -19,7 +19,7 @@ Then sayfayi kapatir........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 2" time="12.66">
+    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 2" time="20.119">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
 Then "java" icin arama yapar................................................passed
@@ -29,7 +29,7 @@ Then sayfayi kapatir........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 3" time="11.871">
+    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 3" time="18.836">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
 Then "ipod" icin arama yapar................................................passed
@@ -39,7 +39,7 @@ Then sayfayi kapatir........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 4" time="9.948">
+    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 4" time="25.42">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
 Then "armut" icin arama yapar...............................................passed
@@ -49,7 +49,7 @@ Then sayfayi kapatir........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 5" time="9.746">
+    <testcase classname="US1005 amazonda liste ile arama" name="TC09 amazonda verilen bir listeyi aratip, var olduklarini test ediniz 5" time="21.7">
         <system-out>
             <![CDATA[Given kullanici "amazonUrl" sayfasina gider.................................passed
 Then "Apple" icin arama yapar...............................................passed
@@ -59,7 +59,7 @@ Then sayfayi kapatir........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test" time="10.42">
+    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test" time="19.57">
         <system-out>
             <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................passed
 Then CH login linkine tiklar................................................passed
@@ -71,7 +71,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 2" time="8.713">
+    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 2" time="12.694">
         <system-out>
             <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................passed
 Then CH login linkine tiklar................................................passed
@@ -83,7 +83,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 3" time="9.322">
+    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 3" time="15.686">
         <system-out>
             <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................passed
 Then CH login linkine tiklar................................................passed
@@ -95,7 +95,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 4" time="8.9">
+    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 4" time="10.52">
         <system-out>
             <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................passed
 Then CH login linkine tiklar................................................passed
@@ -107,7 +107,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 5" time="9.206">
+    <testcase classname="US1006 concort hotels sayfasinda farkli kullanici adlari ile negative test" name="TC10 Farkli kullanici isimleri ile negative test 5" time="10.805">
         <system-out>
             <![CDATA[Given kullanici "CHQAUrl" sayfasina gider...................................passed
 Then CH login linkine tiklar................................................passed

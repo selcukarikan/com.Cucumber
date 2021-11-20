@@ -1,15 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="6" time="86.844">
-    <testcase classname="US1001 amazon arama" name="TC01 amazon nutella arama" time="29.126">
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="7" time="157.939">
+    <testcase classname="US1001 amazon arama" name="TC01 amazon nutella arama" time="35.409">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And nutella icin arama yapar................................................passed
 Then sonucun nutella icerdigini test eder...................................passed
 And sayfayi kapatir.........................................................passed
+And eine moglichkeit........................................................passed
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1001 amazon arama" name="TC02 amazon java arama" time="11.833">
+    <testcase classname="US1001 amazon arama" name="TC02 amazon java arama" time="21.723">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And java icin arama yapar...................................................passed
@@ -18,7 +19,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1001 amazon arama" name="TC03 amazon ipad arama" time="10.612">
+    <testcase classname="US1001 amazon arama" name="TC03 amazon ipad arama" time="20.87">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And ipad icin arama yapar...................................................passed
@@ -27,7 +28,24 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1002 amazon background ile arama" name="TC04 amazon nutella arama" time="11.617">
+    <testcase classname="US1001 amazon arama" name="TC03 amazon iphone11 arama" time="15.6">
+        <failure message="" type="java.lang.AssertionError">
+            <![CDATA[When kullanici amazon sayfasina gider.......................................passed
+And iphone11 icin arama yapar...............................................passed
+Then sonucun iphone icerdigini test eder....................................failed
+And sayfayi kapatir.........................................................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:87)
+	at org.junit.Assert.assertTrue(Assert.java:42)
+	at org.junit.Assert.assertTrue(Assert.java:53)
+	at stepdefinitions.amazonStepDefinitions.sonucun_iphone_icerdigini_test_eder(amazonStepDefinitions.java:99)
+	at ✽.sonucun iphone icerdigini test eder(file:///C:/Users/Lenovo/IdeaProjects/com.Cucumber/src/test/resources/features/US1001_amazonArama.feature:34)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US1002 amazon background ile arama" name="TC04 amazon nutella arama" time="22.341">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And nutella icin arama yapar................................................passed
@@ -36,7 +54,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1002 amazon background ile arama" name="TC05 amazon java arama" time="12.02">
+    <testcase classname="US1002 amazon background ile arama" name="TC05 amazon java arama" time="21.887">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And java icin arama yapar...................................................passed
@@ -45,7 +63,7 @@ And sayfayi kapatir.........................................................pass
 ]]>
         </system-out>
     </testcase>
-    <testcase classname="US1002 amazon background ile arama" name="TC06 amazon ipad arama" time="10.824">
+    <testcase classname="US1002 amazon background ile arama" name="TC06 amazon ipad arama" time="19.211">
         <system-out>
             <![CDATA[When kullanici amazon sayfasina gider.......................................passed
 And ipad icin arama yapar...................................................passed
